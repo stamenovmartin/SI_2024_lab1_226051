@@ -1,0 +1,36 @@
+C:\Users\Martin.DESKTOP-J36C0SU\SI_2024_lab1_226051>git log
+commit b06e3fc554425ed36c682d317234f60309ea9f73 (HEAD -> bug2, origin/master, origin/bug2, master)
+Author: Martin Stamenov <martin.stamenov@students.finki.ukim.mk>
+Date:   Sun Apr 14 20:09:22 2024 +0200
+
+    Call method makeBigStringFrom in main class
+
+commit 77eb3031059bcb5ca022acf469ed54b201f33ddd
+Author: Martin Stamenov <martin.stamenov@students.finki.ukim.mk>
+Date:   Sun Apr 14 20:07:04 2024 +0200
+
+    Fix wrong condition in makeBigStringFrom
+
+commit 849cc827d4f61ab5d6a83b4ac940c9042b1a876f (origin/bug1, bug1)
+Author: Martin Stamenov <martin.stamenov@students.finki.ukim.mk>
+Date:   Sun Apr 14 20:08:25 2024 +0200
+
+    Call method filterOddLengthStrings in main class
+
+commit 8b015e5233db2fb800b97e4a7352d96e2f7a294c
+Author: Martin Stamenov <martin.stamenov@students.finki.ukim.mk>
+Date:   Sun Apr 14 20:05:18 2024 +0200
+
+    Fix wrong condition in filterOddLengthStrings
+
+commit 85f3f8c946c8a117622c76a572f9788e275b7e06
+Author: Martin Stamenov <martin.stamenov@students.finki.ukim.mk>
+Date:   Sun Apr 14 20:01:50 2024 +0200
+
+    Add starter code
+
+commit efe3168954aba23f45c007b04ac255d2e0bd2552
+Author: Martin Stamenov <martin.stamenov@students.finki.ukim.mk>
+Date:   Sun Apr 14 19:59:58 2024 +0200
+
+    Initial commit

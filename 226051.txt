@@ -1,0 +1,266 @@
+Мартин Стаменов 226051
+
+1. Инсталирав git и креирав профил на Github
+-----------------------------------------------------------------------------------
+2. Променив во master
+-----------------------------------------------------------------------------------
+3. Креирав remote rep SI_2024_lab1_226051
+-----------------------------------------------------------------------------------
+4.
+C:\Users\Martin>mkdir SI_2024_lab1_226051
+C:\Users\Martin>cd SI_2024_lab1_226051
+C:\Users\Martin\SI_2024_lab1_226051>git init
+Initialized empty Git repository in C:/Users/Martin.DESKTOP-J36C0SU/SI_2024_lab1_226051/.git/
+-----------------------------------------------------------------------------------
+5. 
+C:\Users\Martin\SI_2024_lab1_226051>git remote add origin https://github.com/stamenovmartin/SI_2024_lab1_226051.git
+-----------------------------------------------------------------------------------
+6.
+Направив README.md и внатре напишав "Мартин Стаменов 226051"
+C:\Users\Martin\SI_2024_lab1_226051>git add .
+C:\Users\Martin\SI_2024_lab1_226051>git commit -m "Initial commit"
+[master (root-commit) efe3168] Initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+-----------------------------------------------------------------------------------
+7.
+Копирав трите .java
+C:\Users\Martin\SI_2024_lab1_226051>git add .
+C:\Users\Martin\SI_2024_lab1_226051>git commit -m "Add starter code"
+[master 85f3f8c] Add starter code
+ 3 files changed, 47 insertions(+)
+ create mode 100644 SILab1Main.java
+ create mode 100644 SILab1_1.java
+ create mode 100644 SILab1_2.java
+-----------------------------------------------------------------------------------
+8.
+C:\Users\Martin\SI_2024_lab1_226051>git push -u origin --all
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (8/8), 1.12 KiB | 1.12 MiB/s, done.
+Total 8 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/stamenovmartin/SI_2024_lab1_226051.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+----------------------------------------------------------------------------------------
+9.
+C:\Users\Martin\SI_2024_lab1_226051>git checkout -b bug1
+Switched to a new branch 'bug1'
+
+C:\Users\Martin\SI_2024_lab1_226051>git checkout -b bug2
+Switched to a new branch 'bug2'
+-----------------------------------------------------------------------------------
+10.
+C:\Users\Martin\SI_2024_lab1_226051>git checkout bug1
+Switched to branch 'bug1'
+-----------------------------------------------------------------------------------
+11. Поправам од == во != во if 
+C:\Users\Martin\SI_2024_lab1_226051>git add SILab1_1.java
+
+C:\Users\Martin\SI_2024_lab1_226051>git commit -m "Fix wrong condition in filterOddLengthStrings"
+[bug1 8b015e5] Fix wrong condition in filterOddLengthStrings
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+-----------------------------------------------------------------------------------
+12.
+C:\Users\Martin\SI_2024_lab1_226051>git checkout bug2
+Switched to branch 'bug2'
+-----------------------------------------------------------------------------------
+13. Поправам од < во >= во if
+C:\Users\Martin.DESKTOP-J36C0SU\SI_2024_lab1_226051>git add SILab1_2.java
+
+C:\Users\Martin\SI_2024_lab1_226051>git commit -m "Fix wrong condition in makeBigStringFrom"
+[bug2 99ea15b] Fix wrong condition in makeBigStringFrom
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+-----------------------------------------------------------------------------------
+14.
+C:\Users\Martin\SI_2024_lab1_226051>git checkout bug1
+Switched to branch 'bug1'
+-----------------------------------------------------------------------------------
+15. во main додавам System.out.println(SILab1_1.filterOddLengthStrings(list));
+C:\Users\Martin\SI_2024_lab1_226051>git add SILab1Main.java
+
+C:\Users\Martin\SI_2024_lab1_226051>git commit -m "Call method filterOddLengthStrings in main class"
+[bug1 849cc82] Call method filterOddLengthStrings in main class
+ 1 file changed, 1 insertion(+)
+-----------------------------------------------------------------------------------
+16.
+C:\Users\Martin\SI_2024_lab1_226051>git checkout bug2
+Switched to branch 'bug2'
+-----------------------------------------------------------------------------------
+17.
+Во main додавам System.out.println(SILab1_2.makeBigStringFrom(list));
+C:\Users\Martin\SI_2024_lab1_226051>git add SILab1Main.java
+
+C:\Users\Martin\SI_2024_lab1_226051>git commit -m "Call method makeBigStringFrom in main class"
+[bug2 0d2e4ed] Call method makeBigStringFrom in main class
+ 1 file changed, 1 insertion(+)
+-----------------------------------------------------------------------------------
+18
+C:\Users\Martin.DESKTOP-J36C0SU\SI_2024_lab1_226051>git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+
+C:\Users\Martin>git push origin bug1
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 756 bytes | 756.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'bug1' on GitHub by visiting:
+remote:      https://github.com/stamenovmartin/SI_2024_lab1_226051/pull/new/bug1
+remote:
+To https://github.com/stamenovmartin/SI_2024_lab1_226051.git
+ * [new branch]      bug1 -> bug1
+
+
+C:\Users\Martin>git push origin bug2
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 700 bytes | 700.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), completed with 3 local objects.
+remote:
+remote: Create a pull request for 'bug2' on GitHub by visiting:
+remote:      https://github.com/stamenovmartin/SI_2024_lab1_226051/pull/new/bug2
+remote:
+To https://github.com/stamenovmartin/SI_2024_lab1_226051.git
+ * [new branch]      bug2 -> bug2
+---------------------------------------------------------------------------------------------
+
+19. 
+C:\Users\Martin\SI_2024_lab1_226051>git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+-----------------------------------------------------------------------------------
+20.
+C:\Users\Martin\SI_2024_lab1_226051>git merge bug1
+Updating 85f3f8c..849cc82
+Fast-forward
+ SILab1Main.java | 1 +
+ SILab1_1.java   | 2 +-
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+-----------------------------------------------------------------------------------
+21.
+
+C:\Users\Martin\SI_2024_lab1_226051>git push origin master
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/stamenovmartin/SI_2024_lab1_226051.git
+   85f3f8c..849cc82  master -> master
+
+C:\Users\Martin\SI_2024_lab1_226051>git push origin bug1
+Everything up-to-date
+-----------------------------------------------------------------------------------
+22. 
+C:\Users\Martin\SI_2024_lab1_226051>git checkout bug2
+Switched to branch 'bug2'
+-----------------------------------------------------------------------------------
+23
+C:\Users\Martin\SI_2024_lab1_226051>git rebase master
+Auto-merging SILab1Main.java
+CONFLICT (content): Merge conflict in SILab1Main.java
+error: could not apply 0d2e4ed... Call method makeBigStringFrom in main class
+hint: Resolve all conflicts manually, mark them as resolved with
+hint: "git add/rm <conflicted_files>", then run "git rebase --continue".
+hint: You can instead skip this commit: run "git rebase --skip".
+hint: To abort and get back to the state before "git rebase", run "git rebase --abort".
+Could not apply 0d2e4ed... Call method makeBigStringFrom in main class
+
+C:\Users\Martin\SI_2024_lab1_226051>git add SILab1Main.java
+
+C:\Users\Martin\SI_2024_lab1_226051>git rebase --continue
+[detached HEAD b06e3fc] Call method makeBigStringFrom in main class
+ 1 file changed, 1 insertion(+)
+Successfully rebased and updated refs/heads/bug2.
+-----------------------------------------------------------------------------------
+
+24.
+C:\Users\Martin\SI_2024_lab1_226051>git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+-----------------------------------------------------------------------------------
+25.
+C:\Users\Martin\SI_2024_lab1_226051>git merge bug2
+Updating 849cc82..b06e3fc
+Fast-forward
+ SILab1Main.java | 1 +
+ SILab1_2.java   | 2 +-
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+-----------------------------------------------------------------------------------
+26.
+C:\Users\Martin\SI_2024_lab1_226051>git pull origin master
+From https://github.com/stamenovmartin/SI_2024_lab1_226051
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+C:\Users\Martin\SI_2024_lab1_226051>git push origin master
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 688 bytes | 688.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), completed with 3 local objects.
+To https://github.com/stamenovmartin/SI_2024_lab1_226051.git
+   849cc82..b06e3fc  master -> master
+
+C:\Users\Martin\SI_2024_lab1_226051>git checkout branch1
+error: pathspec 'branch1' did not match any file(s) known to git
+
+C:\Users\Martin\SI_2024_lab1_226051>git checkout bug1
+Switched to branch 'bug1'
+
+C:\Users\Martin\SI_2024_lab1_226051>git pull origin bug1
+From https://github.com/stamenovmartin/SI_2024_lab1_226051
+ * branch            bug1       -> FETCH_HEAD
+Already up to date.
+
+C:\Users\Martin\SI_2024_lab1_226051>git push origin bug1
+Everything up-to-date
+
+C:\Users\Martin\SI_2024_lab1_226051>git checkout bug2
+Switched to branch 'bug2'
+
+C:\Users\Martin\SI_2024_lab1_226051>git pull bug2
+fatal: 'bug2' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\Users\Martin\SI_2024_lab1_226051>git push bug2
+fatal: 'bug2' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\Users\Martin\SI_2024_lab1_226051>git push origin bug2
+To https://github.com/stamenovmartin/SI_2024_lab1_226051.git
+ ! [rejected]        bug2 -> bug2 (non-fast-forward)
+error: failed to push some refs to 'https://github.com/stamenovmartin/SI_2024_lab1_226051.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+-----------------------------------------------------------------------------------
+27.
+C:\Users\Martin\SI_2024_lab1_226051>git push origin bug2 --force
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/stamenovmartin/SI_2024_lab1_226051.git
+ + 0d2e4ed...b06e3fc bug2 -> bug2 (forced update)
+
+28.
+правам git log и ги копирам сите во log.txt и го правам 226051.txt акде што ги пишувам сите податоци
+git add . 
+git commit -m "Final commit"
+
